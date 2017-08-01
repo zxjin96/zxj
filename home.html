@@ -2,9 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./home.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-$END$
+<div id="box">
+    <div id="box1"></div>
+    <div id="box2">
+        <div id="box3"></div>
+    </div>
+    <div id="box4">
+        <header id="header">
+            <div class="con">
+                <span class="item"><b>推荐</b></span>
+                <span class="item"><b>电视剧</b></span>
+                <span class="item"><b>电影</b></span>
+                <span class="item"><b>综艺</b></span>
+                <span class="item"><b>动漫</b></span>
+                <span class="item"><b>纪录片</b></span>
+                <span class="item"><span class="glyphicon glyphicon-th-list"></span></span>
+            </div>
+            <div class="con">
+                <input type="text" class="glyphicon glyphicon-search" id="search" autocomplete="off" placeholder="请输入影片名">
+                <span class="glyphicon glyphicon-time icon"></span>
+                <span class="glyphicon glyphicon-download-alt icon"></span>
+            </div>
+        </header>
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#">
+                        <img src="http://a3.qpic.cn/psb?/V13HQtSr1XqrX2/y2ulzcswQd0rgjXKPenHYqCqGw4p3W*Le7gzujNnup4!/b/dD0BAAAAAAAA&bo=9AHIAAAAAAARAAo!&rf=viewer_4" alt="First slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="http://a2.qpic.cn/psb?/V13HQtSr1XqrX2/lrkAu80fitmZde6*afl1GpHZroXfBdyKL9OxX4MU19Q!/b/dDwBAAAAAAAA&bo=9AHIAAAAAAARAAo!&rf=viewer_4" alt="Second slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="http://a2.qpic.cn/psb?/V13HQtSr1XqrX2/lC9HBaicbVXKfVK0uYma8R6jogZyC6.8x68UTHRNFB0!/b/dDwBAAAAAAAA&bo=9AHIAAAAAAARAAo!&rf=viewer_4" alt="Second slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="http://a3.qpic.cn/psb?/V13HQtSr1XqrX2/ZcOLt6lCdwQJErFZHNwI*wsR5QG1NWx7l*Z6FJYsrcQ!/b/dD0BAAAAAAAA&bo=9AHIAAAAAAARAAo!&rf=viewer_4" alt="Second slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="http://a2.qpic.cn/psb?/V13HQtSr1XqrX2/r6MM1Vr2YQioa6xEgeuz*d4bAqHjGlthZZQETK*.kN0!/b/dDwBAAAAAAAA&bo=9AHIAAAAAAARAAo!&rf=viewer_4" alt="Second slide">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control left great" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <h4><b>今日热播</b></h4>
+        <div class="div1">
+            <div class="con1">
+                <img src="http://a1.qpic.cn/psb?/V13HQtSr1XqrX2/enzdI42*l0KQGZd6yfceYfWOgTCawUrAln0.5qygiQ4!/b/dBcBAAAAAAAA&bo=WgJQAQAAAAARBzk!&rf=viewer_4">
+                <img src="http://a2.qpic.cn/psb?/V13HQtSr1XqrX2/FqVHO4gsHzOEVef7U19Tv*1AXgikal4W5eKdYk.ESlI!/b/dPcAAAAAAAAA&bo=YwJUAQAAAAARAAM!&rf=viewer_4">
+            </div>
+            <div class="con">
+                <span class="item"><b>复合大师</b><p class="text-muted">闫妮竟恋上异国鲜肉</p></span>
+                <span class="item"><b>楚乔传</b><p class="text-muted">楚乔誓死守卫红川城</p></span>
+            </div>
+            <div class="con1">
+                <img src="http://a1.qpic.cn/psb?/V13HQtSr1XqrX2/z7ktEAiw3aoAxW*fXUQUkQQXCuelicUpyW553dyOyeQ!/b/dHUAAAAAAAAA&bo=XAJaAQAAAAARADI!&rf=viewer_4">
+                <img src="http://a2.qpic.cn/psb?/V13HQtSr1XqrX2/kn8Lo0fo7vKZyCRjcPVkaWbDoFR1Ve9imp8Bt9AgGEg!/b/dPcAAAAAAAAA&bo=XQJMAQAAAAARACU!&rf=viewer_4">
+            </div>
+            <div class="con">
+                <span class="item"><b>我们的少年时代</b><p class="text-muted">引爆青春少时代梦想</p></span>
+                <span class="item"><b>逆袭之星途璀璨</b><p class="text-muted">蛋橙夫妇大战娃娃机</p></span>
+            </div>
+        </div>
+        <div class="div3">
+            <div>
+                <a href="#">
+                    <span class="glyphicon glyphicon-home" id="th"></span>
+                </a>
+                <p>首页</p>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="glyphicon glyphicon-th" id="th"></span>
+                </a>
+                <p>频道</p>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="glyphicon glyphicon-file" id="th"></span>
+                </a>
+                <p>专题</p>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="glyphicon glyphicon-signal" id="th"></span>
+                </a>
+                <p>排行榜</p>
+                </span>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="glyphicon glyphicon-user" id="th"></span>
+                </a>
+                <p>我的</p>
+            </div>
+        </div>
+    </div>
+    <div id="box5"></div>
+</div>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
