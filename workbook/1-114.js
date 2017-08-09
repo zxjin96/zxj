@@ -8,8 +8,5 @@ if(d>0){
 else if(d=0){
     x1=x2=-b/(2*a);
 }
-else(
-        alert("The equation is not real root");
-)
 alert("x1=" + x1);
 alert("x2=" + x2);
