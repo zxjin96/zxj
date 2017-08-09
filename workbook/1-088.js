@@ -1,1 +1,4 @@
-alert("sizeof(bool)");
+var Length = bool.byteLength;
+alert(Length);
+
+
