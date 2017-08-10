@@ -1,10 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="chapter19.css" rel="stylesheet" type="text/css">
+    <title>A social news web page</title>
 </head>
+
 <body>
-$END$
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> PubLink</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <button type="button" id="submitButton" class="btn btn-default navbar-btn">Submit</button>
+                <p class="navbar-text navbar-right">A social news web page built with ? and JavaScript</p>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+        <div id="links"></div>
+        <form class="form-inline linkForm ">
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="tltle">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="url">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleAuthor2" placeholder="Author">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn">Add link</button>
+        </form>
+        <!-- Dynamic content goes here -->
+        <div class="link">
+          <b class="linkTitle">Hacker News</b><span>http://news.ycombinator.com</span>
+            <div class="row col-md-12 linkAuthor">Submitted by Baptists</div>
+        </div>
+        <div class="link">
+            <div class="row col-md-12"><b class="linkTitle ">Reddit</b><span class="linkUrl">http://news.ycombinator.com</span></div>
+            <div class="row col-md-12 linkAuthor">Submitted by Thomas</div>
+        </div>
+        <div class="link">
+          <b class="linkTitle ">Boing Boing</b><span class="linkUrl">http://news.ycombbinator.com</span>
+            <div class="row col-md-12 linkAuthor">Submitted by Daniel</div>
+        </div>
+    </div>
+    <!-- JavaScript code goes into this file -->
+    <script src="chapter19.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
+
