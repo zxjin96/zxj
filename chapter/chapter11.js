@@ -1,12 +1,12 @@
+var linkArr=[];
+var titleArr=[];
+var authorArr=[];
 test();
 function  test() {
     var val=prompt("Annonce de la page http://s.codepen.io:\nChoose an option:\n1:Show links\n2:Add a link\n3:Remove a link\n0:Quit","");
-    var headlineArr =[["baidu"]];
-    var urlArr=[["http://www.baidu.com"]];
-    var authorArr=[["baidu"]];
-    var catalog=headlineArr + urlArr + authorArr;
     if(val==='1') {
-        if (catalog!=null&&catalog!=""){
+        var catalog=titleArr +  linkArr +authorArr;
+        if (catalog!==null&&catalog!==""){
             alert(catalog);
             test();
         }
@@ -15,18 +15,53 @@ function  test() {
             test();
         }
     }
-    else if(val==='2')
+    else if (val==='2')
     {
-
+        var title=prompt("Please enter the title：","");
+        if(title!=="")
+        {
+            titleArr.push(title);
+        var link=prompt("Please enter the link：");
+        if(link.toLowerCase().slice(0,7)==="http://"||link.toLowerCase().slice(0,8)==="https://")
+        {
+            linkArr.push(link);}
+            else
+        {
+            var e="http://"+link;
+            linkArr.unshift(e);
+        }
+        var author=prompt("Please enter the author:","");
+        if(author!=="")
+          {
+              authorArr.push(author);
+              alert("Successfully added");
+              test();
+                }
+            }
     }
-    else if(s==='3')
+    else if(val==='3')
     {
-
-    }
-    else if(val=='0')
+            var remove=prompt("请输入要删除的链接（在1~"+linkArr.length+"）之间","")
+            if(remove!==""&& remove>0 && remove<=linkArr.length)
+            {
+                linkArr.splice(remove-1,1);
+                titleArr.splice(remove-1,1);
+                authorArr.splice(remove-1,1);
+                alert("deleted successfully");
+                test();
+            }
+            else {
+                alert("error！");
+                test();
+            }
+        }
+    else if(val==='0')
     {
         window.close();
     }
+    else{
+        alert("error！");
+        test();
+
+    }
 }
-
-
