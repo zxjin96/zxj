@@ -11,7 +11,7 @@ function  test() {
             test();
         }
         else{
-            alert("链接列表为空！");
+            alert("empty！");
             test();
         }
     }
@@ -41,7 +41,7 @@ function  test() {
     }
     else if(val==='3')
     {
-            var remove=prompt("请输入要删除的链接（在1~"+linkArr.length+"）之间","")
+            var remove=prompt("Please enter a link to delete（在1~"+linkArr.length+"）之间","")
             if(remove!==""&& remove>0 && remove<=linkArr.length)
             {
                 linkArr.splice(remove-1,1);
