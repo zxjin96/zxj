@@ -6,6 +6,9 @@
 
     background-color:#003266;
 }
+.navbar-default .navbar-nav li a {
+    color: white;
+}
 .txtCol{
     color:white;
 }
