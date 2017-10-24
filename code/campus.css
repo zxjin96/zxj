@@ -6,14 +6,24 @@
 
     background-color:#003266;
 }
-.navbar-default .navbar-nav li a {
-    color: white;
-}
 .txtCol{
     color:white;
 }
-.content {
-    background-color: #dcdcdc;
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+.content{
+    background-color:	#dcdcdc;
+}
+.panel-heading{
+    background-color:#CDBA96;
+}
+#l1{
+    list-style-type: none;
+    color:#003266;
+}
+h3{
+    color:#003266;
 }
 #localtime{
     padding-top:15px;
@@ -41,9 +51,6 @@
     list-style-type: none;
     color:#003266;
     font-size:120%;
-}
-#list{
-    margin-right:90px;
 }
 footer {
     background-color: #696969;
