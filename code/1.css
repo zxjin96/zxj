@@ -3,16 +3,16 @@
     color:#003266;
 }
 #nav{
+
     background-color:#003266;
-}
-.navbar-default .navbar-nav li a {
-    color: white;
 }
 .txtCol{
     color:white;
 }
 .txtBlack{
     color: black;
+
+
 }
 .all{
     background-color:#dcdcdc;
@@ -26,9 +26,9 @@
     border-bottom: 2px solid #003266;
 }
 .moreCol{
-    background-color: #fff3e5;
+
     padding: 10px;
-    border-bottom: 2px solid #003266;
+
 }
 .paddN{
     padding: 0px;
@@ -38,14 +38,22 @@
 }
 .href{
     float: left;
+
+
 }
 .href2{
+
     float: right;
+
+
 }
 .item1{
     background-color: #fff3e5;
     width: 70%;
     height: 95%;
+}
+.navbar-default .navbar-nav li a {
+    color: white;
 }
 .footer{
     background-color: dimgray;
@@ -67,12 +75,44 @@
 .big{
     margin-top: 10px;
 
+
+
 }
-.bj{padding-top: 2px;}
+.bj{
+    padding-top: 2px;
+
+}
+
+
 
 .bgp{
-    background-color:#fff3e5;
+    background-color: #fff3e5;
     border-bottom: 2px solid #003266;
-    height:42px;
-    padding:0px;
+    height: 42px;
+    padding: 0px;
+}
+.omit{
+
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-indent: 2em;
+}
+.indent{
+    text-indent: 1em;
+}
+.bj a{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+    height: 16px;
+
+
+
+
+
 }
